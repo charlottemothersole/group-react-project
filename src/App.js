@@ -1,20 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Pages/Home';
 import Form from './Form';
+import { Routes, Route, Link, Router, BrowserRouter } from "react-router-dom";
+import Navbar from './components/Navbar/Navbar';
+import ContactUs from './components/Pages/ContactUs';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Robotte Project
-        </p>
-        <p>----------</p>
-      </header>
-      <div id='contact'>
-        <h2>Contact Us</h2>
-        <Form></Form>
-      </div>      
+       <div>
+        <BrowserRouter>
+         <Routes>
+           <Route path="/" element={<Home />} />
+           <Route path="/contactus" element={<ContactUs />} />
+         </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

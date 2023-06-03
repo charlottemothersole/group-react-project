@@ -1,0 +1,42 @@
+.HomeTitle {
+    color: #30034f;
+    font-size: 3rem;
+
+}
+
+.RobynTitle {
+    color: #320252;
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.RobynBio {
+    color: #320252;
+    font-size: 0.9rem;
+    flex-direction: column-reverse;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.CharTitle {
+    color: #320252;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.CharBio {
+    color: #320252;
+    font-size: 0.9rem;
+    flex-direction: column-reverse;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
