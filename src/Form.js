@@ -19,25 +19,31 @@ export default function Form() {
         setMessage(e.target.value)
     }    
 
-    const handleSubmit = (event) => {
+    const handleSubmitCharlotte = (event) => {
         // event.preventDefault();
         
     }
 
     return (
-        <div id='form'>
-            <form  onSubmit={handleSubmit}  method='POST' action='https://formspree.io/f/mjvdqgro'>            
-                <input name='name' id='name' type='text' placeholder='Your Name:' value={name} onChange={handleNameChange}></input>
-                <input name='email' id='email' type='email' placeholder='Your Email Address:' value={email} onChange={handleEmailChange}></input>
-                <input name='message' id='message' type='text' placeholder='Your Message:' value={message} onChange={handleMessageChange}></input>
-                <button id='submit-charlotte' type='submit'>Submit to Charlotte</button>
-                {/* <button id='submit-robyn' type='button'>Submit to Robyn</button> */}
-            </form>
-            <img height='300px' width='350px' src={Image} alt='img text'/>
+        <div id ='contact-section'>
+            <div id='form'>
+                <form  onSubmit={handleSubmitCharlotte}  method='POST' action='https://formspree.io/f/mjvdqgro'>            
+                    <input class="input-field" name='name' id='name' type='text' placeholder='Your Name:' value={name} onChange={handleNameChange}></input>
+                    <input class="input-field" name='email' id='email' type='email' placeholder='Your Email Address:' value={email} onChange={handleEmailChange}></input>
+                    <i class="fa fa-envelope icon"></i>
+                    <textarea class="input-field" name='message' id='message' type='text' placeholder='Your Message:' value={message} onChange={handleMessageChange}></textarea>
+                    <button id='submit-charlotte' type='submit'>Submit to Charlotte</button>
+                    {/* <button id='submit-robyn' type='button'>Submit to Robyn</button> */}
+                </form>
             
+{/*             
             <h2>Current User Input: </h2>
-            <h4>{message}</h4>
-        </div>        
+            <h4>{message}</h4> */}
+                <img height='300px' width='350px' src={Image} alt='img text'/>
+
+            </div>  
+        </div>
+              
     )
 }
 
