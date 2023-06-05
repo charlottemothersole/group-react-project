@@ -1,25 +1,77 @@
-#form {
+#form-container-charlotte {
+  background-color: blue;
+  height: 450px;
+  padding: 0 20px;
+}
+
+#form-container-robyn {
+  background-color: red;
+  height: 450px;
+  padding: 0 20px;
+}
+
+#form-charlotte, #form-robyn {
     display: flex;
     justify-content: center;
     margin: 20px;
   }
   
-  form {
+  #charlotte {
     display: flex;
     flex-direction: column;
     width: 300px;
     justify-content: space-between;
-  
+    position: relative;
+    z-index: 999;
+    height: 300px;
+    left: -350px;
+    bottom: -75px;
+  }
+
+  #robyn {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+    height: 300px;
+    left: 300px;
+    bottom: -75px;
   }
   
   form >* {
     padding: 5px;
   }
+
+  input, textarea, button {
+    border-style: none;
+    border-radius: 10px;
+  }
   
   button {
     width: 200px;
+    margin: 0 auto;
+    background-color: white;
+    /* color: white; */
   }
   
-  img {
+  #img-charlotte {
     margin: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 800px;
+  }
+
+  #img-robyn {
+    margin: 20px;
+    position: absolute;
+    left: 100px;
+    bottom: -455px;
+  }
+
+  textarea {
+    resize: none;
+    font-family: arial;
+    height: 75px;
   }
