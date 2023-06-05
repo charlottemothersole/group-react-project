@@ -1,11 +1,11 @@
 #form-container-charlotte {
-  background-color: blue;
+  background-color: #30034f;
   height: 450px;
   padding: 0 20px;
 }
 
 #form-container-robyn {
-  background-color: red;
+  background-color: #a09cf2;
   height: 450px;
   padding: 0 20px;
 }
@@ -59,16 +59,15 @@
   #img-charlotte {
     margin: 20px;
     position: absolute;
-    bottom: 15px;
+    bottom: 115px;
     left: 800px;
   }
 
   #img-robyn {
-  .FormImage {
     margin: 20px;
     position: absolute;
     left: 100px;
-    bottom: -455px;
+    bottom: -355px;
   }
 
   textarea {
