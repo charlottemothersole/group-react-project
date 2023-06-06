@@ -1,6 +1,7 @@
 import React from "react";
 import Form from '../../Form';
 import Navbar from "../Navbar/Navbar";
+import Footer from './Footer';
 
 const ContactUs = () => {
     return (
@@ -8,6 +9,7 @@ const ContactUs = () => {
             <Navbar />
             <h2> Contact Us</h2>
             <Form></Form>
+            <Footer />
         </div>
     )
 }   
